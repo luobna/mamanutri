@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamanutri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Mamanutri">
+        </div>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#concept">Concept</a>
+            <a href="#services">Services</a>
+            <a href="#menus">Menus</a>
+            <a href="https://paypal.me/mamanutri/50" target="_blank">Bons cadeaux</a>
+            <a href="#" onclick="alert('Veuillez nous envoyer votre message à Mama-nutri@yahoo.fr'); return false;">
+                Contact
+            </a>
+        </nav>
+    </header>
+
+    <!-- ===== ACCUEIL ===== -->
+    <section id="accueil" class="hero">
+        <div class="hero-text">
+            <h1>Bienvenue à Mamanutri ... <br/> Nutrition sur mesure pour mamans et bébés</h1>
+            <p>Des repas sains et adaptés, livrés directement à domicile pour vous et votre bébé</p>
+            <a href="#contact" class="btn">Lancer votre commande</a>
+        </div>
+        <div class="hero-image">
+            <img src="accueil.jpg" alt="Repas grossesse">
+        </div>
+    </section>
+
+    <!-- ===== CONCEPT ===== -->
+    <section id="concept">
+        <h2>Notre concept</h2>
+        <div class="concept-plus">
+            <div class="concept-text">
+                <p>
+                    Chez <strong>mamanutri</strong>, chaque repas est pensé comme un accompagnement bienveillant
+                    pendant la grossesse et les premiers mois de bébé. Nous sélectionnons des ingrédients frais,
+                    de saison et cuisinés maison pour garantir des apports nutritionnels adaptés, sans compromis
+                    sur le goût. Notre objectif est de soulager les familles du quotidien tout en apportant
+                    sécurité, équilibre et plaisir dans l’assiette, grâce à des menus personnalisés et des
+                    compotes naturelles, livrés directement à domicile.
+                </p>
+            </div>
+
+            <div class="concept-cards">
+                <div class="card">
+                    <div class="icon">🥦</div>
+                    <h3>Ingrédients frais</h3>
+                    <p>Produits de saison et cuisine maison</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">👩‍⚕️</div>
+                    <h3>Adapté grossesse & bébé</h3>
+                    <p>Menus pensés pour leurs besoins</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🚚</div>
+                    <h3>Livraison sereine</h3>
+                    <p>Repas prêts, livrés à domicile</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services">
+        <h2>Nos services</h2>
+        <div class="services-grid">
+            <div class="service">
+                <img src="img1.jpg" alt="Repas grossesse">
+                <h3>Repas grossesse</h3>
+                <p>Menus adaptés par trimestre, livrés à domicile.</p>
+            </div>
+
+            <div class="service">
+                <img src="img3.jpg" alt="Repas bébé">
+                <h3>Repas bébé</h3>
+                <p>Purées et plats bébé faits maison, adaptés à l’âge.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MENUS ===== -->
+    <section id="menus">
+        <h2>Nos menus</h2>
+        <div class="menu-grid">
+
+            <!-- MENU 1 -->
+            <div class="menu-card" data-name="Menu végétarien" data-price="20">
+                <div class="slider">
+                    <input type="radio" name="menu1" id="m1-1" checked>
+                    <input type="radio" name="menu1" id="m1-2">
+
+                    <div class="slides">
+                        <img src="plat1.webp" alt="Carottes râpées">
+                        <img src="plat2.webp" alt="Dahl lentilles">
+                    </div>
+
+                    <div class="arrows">
+                        <label for="m1-2">→</label>
+                        <label for="m1-1">←</label>
+                    </div>
+                </div>
+
+                <h3>Menu végétarien</h3>
+                <p>Carottes râpées + Dahl lentilles</p>
+                <span class="price">20 € / pers</span>
+
+                <details class="menu-details">
+                    <summary>Voir bienfaits</summary>
+                    <p>
+                        ⚡ Énergie stable – Glucides complexes et protéines végétales.<br>
+                        🌱 Digestion facilitée – Fibres et épices douces.<br>
+                        💪 Riche en nutriments – Vitamines essentielles.<br>
+                        🔥 Soutien immunitaire – Épices anti-inflammatoires.<br>
+                        💚 Moment réconfortant – Texture onctueuse.
+                    </p>
+                </details>
+
+                <div class="quantity-selector">
+                    <button class="minus">−</button>
+                    <input type="text" value="1" readonly>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+
+            <!-- MENU 2 -->
+            <div class="menu-card" data-name="Menu classique" data-price="20">
+                <div class="slider">
+                    <input type="radio" name="menu2" id="m2-1" checked>
+                    <input type="radio" name="menu2" id="m2-2">
+
+                    <div class="slides">
+                        <img src="plat3.jpeg" alt="Velouté poireaux">
+                        <img src="plat4.webp" alt="Poulet au four">
+                    </div>
+
+                    <div class="arrows">
+                        <label for="m2-2">→</label>
+                        <label for="m2-1">←</label>
+                    </div>
+                </div>
+
+                <h3>Menu classique</h3>
+                <p>Velouté poireaux + Poulet au four</p>
+                <span class="price">20 € / pers</span>
+
+                <details class="menu-details">
+                    <summary>Voir bienfaits</summary>
+                    <p>
+                        ⚡ Énergie – Protéines animales et glucides.<br>
+                        🌱 Digestion – Fibres du poireau.<br>
+                        💪 Renforcement musculaire – Poulet riche en protéines.<br>
+                        🔥 Soutien immunitaire – Vitamines A et C.<br>
+                        💚 Réconfort – Velouté doux et nourrissant.
+                    </p>
+                </details>
+
+                <div class="quantity-selector">
+                    <button class="minus">−</button>
+                    <input type="text" value="1" readonly>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+
+            <!-- MENU 3 -->
+            <div class="menu-card" data-name="Menu douceur" data-price="20">
+                <div class="slider">
+                    <input type="radio" name="menu3" id="m3-1" checked>
+                    <input type="radio" name="menu3" id="m3-2">
+
+                    <div class="slides">
+                        <img src="plat5.jpg" alt="Coquillettes">
+                        <img src="plat6.webp" alt="Compote">
+                    </div>
+
+                    <div class="arrows">
+                        <label for="m3-2">→</label>
+                        <label for="m3-1">←</label>
+                    </div>
+                </div>
+
+                <h3>Menu douceur</h3>
+                <p>Coquillettes + Compote</p>
+                <span class="price">20 € / pers</span>
+
+                <details class="menu-details">
+                    <summary>Voir bienfaits</summary>
+                    <p>
+                        ⚡ Énergie douce – Glucides faciles à digérer.<br>
+                        🌱 Digestion légère – Coquillettes bien cuites et compote.<br>
+                        💪 Soutien musculaire – Apport en protéines modéré.<br>
+                        🔥 Vitamines et minéraux – Compote riche en antioxydants.<br>
+                        💚 Confort et réconfort – Texture douce et agréable.
+                    </p>
+                </details>
+
+                <div class="quantity-selector">
+                    <button class="minus">−</button>
+                    <input type="text" value="1" readonly>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+
+            <!-- MENU 4 -->
+            <div class="menu-card" data-name="Menu gourmand végétarien" data-price="20">
+                <div class="slider">
+                    <input type="radio" name="menu4" id="m4-1" checked>
+                    <input type="radio" name="menu4" id="m4-2">
+
+                    <div class="slides">
+                        <img src="plat7.jpg" alt="Gratin">
+                        <img src="plat8.jpg" alt="Gâteau pomme-poire">
+                    </div>
+
+                    <div class="arrows">
+                        <label for="m4-2">→</label>
+                        <label for="m4-1">←</label>
+                    </div>
+                </div>
+
+                <h3>Menu gourmand végétarien</h3>
+                <p>Gratin + Gâteau pomme-poire</p>
+                <span class="price">20 € / pers</span>
+
+                <details class="menu-details">
+                    <summary>Voir bienfaits</summary>
+                    <p>
+                        ⚡ Énergie durable – Pommes et féculents.<br>
+                        🌱 Digestion douce – Fibres du gratin.<br>
+                        💪 Nutriments essentiels – Calcium et vitamines.<br>
+                        🔥 Soutien immunitaire – Antioxydants du fruit.<br>
+                        💚 Moment réconfortant – Douceur du gâteau.
+                    </p>
+                </details>
+
+                <div class="quantity-selector">
+                    <button class="minus">−</button>
+                    <input type="text" value="1" readonly>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== MENUS BÉBÉ ===== -->
+    <section id="menus-bebe">
+        <h2>Menus bébé – texture purée</h2>
+        <div class="menu-grid">
+
+            <div class="menu-card baby" data-name="Menu végétarien bébé" data-price="3.50">
+                <img src="bebe1.webp" alt="Purée carotte lentilles">
+                <span class="baby-badge">Version bébé</span>
+                <h3>Menu végétarien bébé</h3>
+                <p>Purée carotte + lentilles</p>
+                <span class="price">3.50 € / portion</span>
+                <div class="quantity-selector">
+                    <button class="minus">−</button>
+                    <input type="text" value="1" readonly>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+
+            <div class="menu-card baby" data-name="Menu classique bébé" data-price="3.50">
+                <img src="bebe2.webp" alt="Purée poireaux poulet">
+                <span class="baby-badge">Version bébé</span>
+                <h3>Menu classique bébé</h3>
+                <p>Purée poireaux + poulet</p>
+                <span class="price">3.50 € / portion</span>
+                <div class="quantity-selector">
+                    <button class="minus">−</button>
+                    <input type="text" value="1" readonly>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+
+            <div class="menu-card baby" data-name="Menu douceur bébé" data-price="3.50">
+                <img src="bebe3.webp" alt="Purée coquillettes compote">
+                <span class="baby-badge">Version bébé</span>
+                <h3>Menu douceur bébé</h3>
+                <p>Purée coquillettes + compote</p>
+                <span class="price">3.50 € / portion</span>
+                <div class="quantity-selector">
+                    <button class="minus">−</button>
+                    <input type="text" value="1" readonly>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+
+            <div class="menu-card baby" data-name="Menu gourmand bébé" data-price="3.50">
+                <img src="bebe4.webp" alt="Purée gratin fruit">
+                <span class="baby-badge">Version bébé</span>
+                <h3>Menu gourmand bébé</h3>
+                <p>Purée gratin + fruit</p>
+                <span class="price">3.50 € / portion</span>
+                <div class="quantity-selector">
+                    <button class="minus">−</button>
+                    <input type="text" value="1" readonly>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== CONTACT / FORMULAIRE ===== -->
+    <section id="contact">
+        <h2>Commande</h2>
+
+        <form id="googleForm" class="contact-form">
+            <label>Nom *</label>
+            <input type="text" name="entry.2140440219" required>
+
+            <label>Email *</label>
+            <input type="email" name="entry.1974280323" required>
+
+            <label>Téléphone</label>
+            <input type="tel" name="entry.1322477421">
+
+            <h3>Détail de votre commande</h3>
+            <div id="orderSummary" class="order-summary">
+                <p>Aucun menu sélectionné.</p>
+            </div>
+
+            <p class="total-line">
+                Total à payer : <span id="orderTotal">0 €</span>
+            </p>
+
+            <!-- Champ caché envoyé à Google Forms -->
+            <input type="hidden" name="entry.1554953321" id="hiddenOrder">
+
+            <button type="submit">Commander</button>
+        </form>
+
+        <div id="formMessage" style="margin-top:10px; color:green; display:none;">
+            Merci pour votre commande !
+        </div>
+    </section>
+
+    <div class="reseaux-styles">
+        <p class="titre">Suivez-nous :</p>
+        <p class="facebook">Facebook : @Ma_Mamanutri</p>
+        <p class="instagram">Instagram : Ma Mamanutri</p>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>© 2026 – Repas grossesse & bébé – Toulouse</p>
+    </footer>
+
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
